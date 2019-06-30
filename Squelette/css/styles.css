@@ -1,0 +1,332 @@
+/* ===============================
+   Colour Palette:
+   ---------------
+   Light Cream:	#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+/* General */
+
+body {
+
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizelegibility;
+   font-family: 'Open Sans', sans-serif;
+   color: #4b2707;  
+   background-color: #f2f3ee;
+}
+
+.container {
+
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   padding-left: 15%;
+   padding-right: 15%;
+}
+
+h1, h2 {
+
+   font-family: 'Love Ya Like A Sister', cursive;
+   color:#d17f38;
+}
+
+h1 {
+   color: #d17f38;
+   font-family: "Love Ya Like A Sister";
+   text-align: center;
+   background-position: bottom left;
+   background-image:url("../images/header-divider.png"),repeat;
+   text-decoration: underline;
+   background-position: 0 1.06em;
+   background-size:28px 9px; 
+}
+
+h1 em {
+
+    color:#4b2707;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p.lead {
+   font-size: 22px;
+   text-align: center;
+
+}
+
+p {
+
+}
+
+a:link, a:visited {
+   color:#d17f38;
+
+}
+
+a:hover {
+
+}
+
+hr {
+
+}
+
+
+/* Header */
+
+header nav {
+
+   padding-bottom: 2em;
+   margin-bottom: 1em;
+   justify-content: center;
+   background: url(../images/logo.png) no-repeat;
+   /*logo affiché une fois à gauche, à repositionner*/
+   background-position: center;
+   background-size:180px;
+
+}
+
+header nav ul {
+  
+   text-align: center;
+}
+
+header nav ul li {
+   
+   display: inline-block;
+   width: 100px;
+   height: 30px;
+   margin-right: 40px;
+   vertical-align: center;
+   text-align: center;
+}
+
+header nav ul li a {
+   
+   text-decoration: none;
+
+   color:#e8c04f ; 
+   font-weight: bold;
+  height: 70em;
+} 
+
+header nav ul li a:hover {
+
+}
+
+header nav ul li#logo a {
+   
+   visibility: hidden;
+   background-image: url(../images/logo.png), no-repeat;
+   background-position: center;
+ 
+}
+
+header nav ul li#logo a:hover {
+   
+
+}
+
+
+/* Hero */
+
+#hero {
+  
+  background-color: #e8c04f;
+   display: flex;
+   justify-content: center;
+   padding-top: 2em;
+   padding-bottom:2em;
+   width:100%;   
+   height:30em;
+}
+
+#hero .container {
+  
+   display: flex;
+   justify-content: center;
+   text-align:center;
+   position: absolute;
+}
+
+#hero .large-ribbon {
+
+    
+  display: flex;
+   background-image: url("../images/fresh-whole-ingredients.png");
+   background-repeat: no-repeat;
+   position:relative;
+   top: -33em;
+   left: 27em;
+   width:12em;
+   height: 12em; /*visibility:hidden;*/
+   color: transparent;
+}
+
+
+/* The Whole Story */
+
+#story-excerpt {
+
+    float: left;
+    width: 50%;
+    height: 50%; 
+    text-align: left; 
+}
+
+#best-donut {
+
+     background: url(../images/award.png);
+     background-repeat: no-repeat;
+     background-position:left left;
+     float: right;
+     width: 50%;
+     height: 50%;
+     text-align: center;
+     vertical-align: center;
+     padding-top:35px;
+  
+   }
+
+
+/* News & Events */
+
+#articles {
+
+  display:flex;
+   flex-direction:column;
+   justify-content:start;
+   align-items:flex-start;
+   width: 100%;
+   height: 700px;
+
+}
+
+#feature-image {
+     
+   width: auto;
+   height:auto;
+
+   margin-top:-600px;
+   padding-top:-600px;
+   padding-left:200px; 
+   margin-left:200px;
+   margin-right:-150px;
+   padding-right:-150px;
+}
+
+#news-events article { 
+
+background: url(../images/icon-news.png);
+     background-repeat: no-repeat;
+     background-position:left left;
+     padding-left:-5%;
+     margin-left:-5%;
+
+background: url(../images/icon-calendar.png);
+     background-repeat: no-repeat;
+     background-position:left left;
+     padding-left: -5%
+     margin-left: -5%;
+}
+
+#news-events article.news {
+
+  margin-left: 5%;
+  padding-left: 5%;
+}
+
+#news-events article.event {
+
+  margin-left: 5%;
+  padding-left: 5%;
+
+}
+
+#news-events header time {
+   color:#e8c04f;
+}
+
+#news-events section.excerpt {
+text-align: left;
+width: 40%;
+height: 9em;
+
+}
+
+#news-events footer {
+  padding-top: -3em;
+  margin-top:-3em;
+}
+
+
+/* Footer */
+
+footer.main {
+
+  position: relative;
+  width: 100%;
+  height: 10em;
+  margin-top:20px;
+  padding-top:20px;
+  background-color:#4b2707;
+  vertical-align: center;
+}
+
+footer.main a:hover {
+
+}
+
+#uncopyright, #credits {
+
+   color:#f2f3ee;
+}
+
+#uncopyright {
+ 
+   margin-top: 1em;
+   margin-right: 70%;
+   background: url(../images/icon-recycle.png);
+     background-repeat: no-repeat;
+     background-position:left left;
+  vertical-align: center;
+}
+
+#credits {
+   
+   padding-top:-1em;
+   margin-top:-4em;
+   margin-left:70%;
+   background: url(../images/icon-apple.png);
+     background-repeat: no-repeat;
+     background-position:left left;
+  vertical-align: center;
+}
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
